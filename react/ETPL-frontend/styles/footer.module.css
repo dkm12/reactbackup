@@ -1,0 +1,15 @@
+/*------footer css start ---------*/
+.footer h4{margin-bottom:30px;}
+.footer ul{padding:0; list-style:none;}
+.footer ul li{margin-bottom:15px;}
+.footerTop{padding:30px 0; color:#091a50;}
+.mobileApp{border-bottom:1px solid #c6ccd8; padding:20px 0; color:#383838; font-size:18px;}
+.mobileApp img{width:85px; display: inline-block;}
+.emailSub input{border:none; border-radius:0;}
+.inputGroupText{padding: 0.75rem 0.75rem; border:none; border-radius:0; background:#04264c; color:#fff;}
+.footer .icon {width: 40px; height: 40px; padding: 10px 8px;}
+.footer .social a {display: flex;}
+.footer .icon{background-color:#fff; margin-right:10px;border-radius:50%}
+.copyText{background:#fff; text-align:center; padding: 10px 0;}
+.footer {background:#e0e5eb !important;}
+/*------footer css end ----------*/

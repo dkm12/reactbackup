@@ -1,0 +1,6 @@
+<h1>Account Holder 1</h1>
+<label>Enter amount</label><input type="text" #txtAmount />
+<button (click)="withdrawAmounts(txtAmount.value)">Withdraw Amount</button>
+<button (click)="addamounts(txtAmount.value)">Add Amount</button>
+<br/>
+<label>Balance amount in Account </label> :{{sumAmount}}

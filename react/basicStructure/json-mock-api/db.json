@@ -1,0 +1,71 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "user": [
+    {
+      "name": "Kamla Kant Mishra",
+      "age": 62,
+      "id": 1
+    },
+    {
+      "name": "Kamla Kant Mishra",
+      "age": "11",
+      "id": 2
+    },
+    {
+      "name": "dkmishra",
+      "age": "30",
+      "id": 3
+    },
+    {
+      "name": "Kamla Kant",
+      "age": 62,
+      "id": 5
+    },
+    {
+      "name": "Prakash Chandra",
+      "age": 62,
+      "id": 6
+    },
+    {
+      "name": "Yashveer Singh",
+      "age": 32,
+      "id": 8
+    }
+  ],
+  "userInfo": [
+    {
+      "id": 2,
+      "UserName": "Deepak Mishra",
+      "password": 32,
+      "emailid": "dkmisra12@gmail.com"
+    },
+    {
+      "UserName": "deepak misra",
+      "password": "dddd",
+      "emailid": "dkmishra12@gmail.com",
+      "id": 3
+    },
+    {
+      "UserName": "deepak misra",
+      "password": "sdcswer",
+      "emailid": "dkmishra12@gmail.com",
+      "id": 4
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

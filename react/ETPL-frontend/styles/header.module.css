@@ -1,0 +1,30 @@
+/*------header css start ---------*/
+.header{margin-top:30px;}
+.logo{width:160px;}
+.sticky {position: -webkit-sticky; position: sticky; top: 0;z-index:20; background:#fff; -moz-box-shadow: 0 -2px 8px 6px #d9d9d9; -webkit-box-shadow: 0 -2px 8px 6px #d9d9d9; box-shadow: 0 -2px 8px 6px #d9d9d9;}
+/*------------nav css------*/
+.gw-sidebar.subMenu{display:none; background:#fff; z-index:1; border-radius:5px;  padding:20px; border-radius: 1rem; box-shadow: 0 0 50px rgb(0 0 0 / 10%);}
+.gw-sidebar.subMenu ul{list-style:none; padding:0; min-width:200px;}
+.gw-sidebar.subMenu ul>li{display:block;padding:0;margin:0;border:0;border-bottom:1px solid #e5e5e5;text-decoration:none}
+.gw-sidebar.subMenu ul>li:last-child{border-bottom:none;}
+.gw-sidebar.subMenu ul>li a{padding:5px 10px; display:block; font-weight:600;}
+.gw-sidebar.subMenu ul>li a:hover{text-decoration:none;}
+#collapsibleNavbar .nav-link img{width:8px; position:absolute; top:12px; right:10px;}
+#collapsibleNavbar .navbar-nav li:hover .gw-sidebar.subMenu{display:block;position: absolute; top: 48px;}
+#collapsibleNavbar .navbar-nav .nav-item{align-items: center; display: flex;position: relative; padding: 0 18px 0 5px;border-right: 1px solid #e2e8ee;}
+#collapsibleNavbar .navbar-nav .nav-item:nth-last-child(2){border-right:none;}
+#collapsibleNavbar .menu-second{min-height:300px; z-index:5; position: absolute;left: 200px;top: 0;width: 100%;background: #fff; width:600px; display:none !important; padding:20px 0;}
+#collapsibleNavbar .gw-submenu li:hover .menu-second{display:block !important;}
+#collapsibleNavbar .navbar-nav .nav-link{color:#212020; font-weight: 600; padding:3px .5rem}
+#collapsibleNavbar .gw-submenu .fa.fa-angle-right{position:absolute; right: 10px;font-size: 15px;}
+#collapsibleNavbar .listView-two{display: flex; flex-wrap: wrap;}
+#collapsibleNavbar .listView-two li{width:48%; display:inline-block; margin-right:10px;}
+.navButton{position: absolute;right: 0;background: #01a0e2; padding: 9px 7px; cursor:pointer;}
+.navButton img{width:25px;}
+.navSec .navbar{padding-top:2px; padding-bottom:2px;}
+.navSec .navbar-dark{background:none !important; padding-top:10px; padding-right:0;}
+.navSec .navbar-dark .navbar-toggler{background:#01a0e2; padding:5px 7px;}
+.loginBtn a{color:#fff !important; background:#0a1d52; border-radius:20px;}
+.loginBtn{padding-right:0 !important; border-right:none !important; padding-left:25px !important}
+.loginBtn a{padding:8px 11px !important;}
+/*------header css end ----------*/

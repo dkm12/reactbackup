@@ -1,0 +1,55 @@
+<script>
+$(document).ready(function(){
+ $('.ul-expand').click(function(){
+     $(this).siblings().children('ul').slideUp();
+	 $('.ul-expand').not(this).removeClass('minus-icon');
+	 $('.ul-expand').not(this).children('a').attr('aria-expanded','false');
+	 $(this).toggleClass("minus-icon plus-icon");
+	 $(this).children('a').attr('aria-expanded','true');
+		 $(this).children('ul').slideToggle();
+		
+	 });
+
+	  $('.ul-expand-1').click(function(){
+     $(this).siblings().children('ul').slideUp();
+	 $('.ul-expand-1').not(this).removeClass('minus-icon');
+	 $('.ul-expand1-1').not(this).children('a').attr('aria-expanded','false');
+	 $(this).toggleClass("minus-icon plus-icon");
+	 $(this).children('a').attr('aria-expanded','true');
+		 $(this).children('ul').slideToggle();
+		
+	 });
+	 
+ $('.ul-expand-2').click(function(){
+     $(this).siblings().children('ul').slideUp();
+	 $('.ul-expand-2').not(this).removeClass('minus-icon');
+	 $('.ul-expand-2').not(this).children('a').attr('aria-expanded','false');
+	 $(this).toggleClass("minus-icon plus-icon");
+	 $(this).children('a').attr('aria-expanded','true');
+		 $(this).children('ul').slideToggle();
+		
+	 });
+
+ $('.ul-expand').click(function(){
+     $(this).siblings().children('ul').slideUp();
+	 $('.ul-expand-3').not(this).removeClass('minus-icon');
+	 $('.ul-expand-3').not(this).children('a').attr('aria-expanded','false');
+	 $(this).toggleClass("minus-icon plus-icon");
+	 $(this).children('a').attr('aria-expanded','true');
+		 $(this).children('ul').slideToggle();
+		
+	 });
+
+ $('.ul-expand-4').click(function(){
+     $(this).siblings().children('ul').slideUp();
+	 $('.ul-expand-4').not(this).removeClass('minus-icon');
+	 $('.ul-expand-4').not(this).children('a').attr('aria-expanded','false');
+	 $(this).toggleClass("minus-icon plus-icon");
+	 $(this).children('a').attr('aria-expanded','true');
+		 $(this).children('ul').slideToggle();
+		
+	 });	 
+
+
+}
+</script>

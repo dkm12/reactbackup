@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bata</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/customScroll.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<header></header>
+<main class="container rounded p-3">
+<div class="ribbon p-2 mb-3 rounded-top">
+<div class="nav-name">Flexi Basket</div>
+</div>
+
+
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="tab" href="#menu1">Flexi Basket Claim</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#menu2">Flexi Basket Claim Search</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="tab" href="#menu3">Flexi Basket Declaration</a>
+</li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content mt-3">
+<div class="tab-pane active" id="menu1">
+<form>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group d-flex justify-content-between">
+<label for="sal" class="w-25 align-self-center mb-0">Salary Code:</label>
+<input type="text" class="form-control" id="sal" value="1234" disabled>
+</div>
+<div class="form-group d-flex justify-content-between">
+<label for="name" class="w-25 align-self-center mb-0">Name:</label>
+<input type="text" class="form-control" id="name" value="Sachin Singh" disabled>
+</div>
+<div class="form-group d-flex justify-content-between">
+<label for="des" class="w-25 align-self-center mb-0">Designation:</label>
+<input type="text" class="form-control" id="des" value="Software Engineer" disabled>
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group d-flex justify-content-between">
+<label for="grd" class="w-25 align-self-center mb-0">Grade:</label>
+<input type="text" class="form-control" id="grd" value="A" disabled>
+</div>
+<div class="form-group d-flex justify-content-between">
+<label for="loc" class="w-25 align-self-center mb-0">Location:</label>
+<input type="text" class="form-control" id="loc" value="Noida" disabled>
+</div>
+<div class="form-group d-flex justify-content-between">
+<label for="dep" class="w-25 align-self-center mb-0">Department:</label>
+<input type="text" class="form-control" id="dep" value="Software" disabled>
+</div>
+</div>
+</div>
+<div class="d-flex justify-content-end add-row">
+<span class="btn btn-primary mb-3"><i class="fa fa-plus-circle" aria-hidden="true" title="Add new Filed"></i> Add Row </span>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered fbc-table mb-0">
+<thead>
+<tr>
+<th>Flexi Component</th>
+<th>Bill Date</th>
+<th>Bill No.</th>
+<th>Amount</th>
+<th>Attachment</th>
+<th>Remark</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<select class="form-control">
+<option>--Select--</option>
+<option>Fuel</option>
+<option>Insurance</option>
+<option>Car Maintenance</option>
+<option>Driver Salary</option>
+</select>
+</td>
+<td><input type="date" class="form-control"></td>
+<td><input type="text" class="form-control"></td>
+<td><input type="text" class="form-control"></td>
+<td align="center">
+<div class="upload-btn-wrapper">
+<i class="fa fa-upload" aria-hidden="true"></i>
+  <input type="file" name="myfile" />
+</div>
+</td>
+<td><input type="text" class="form-control"></td>
+<td align="center"><i class="fa fa-trash" aria-hidden="true" title="Delete"></i></td>
+</tr>
+<tr>
+<td colspan="3" align="right" class="font-weight-bold">Total:</td>
+<td class="font-weight-bold"  align="right"><i class="fa fa-inr" aria-hidden="true"></i></td>
+<td colspan="3" ></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="form-submit d-flex justify-content-between  border border-top-0 p-2">
+<div class="declaration">
+<div class="dec-h">Declaration:-</div>
+<div class="dec-text"><input type="checkbox"> I hereby declare that the above details are correct to the best of my knowledge. I am also attaching the receipts/bills for the expenses incurred with this claim form.</div>
+</div>
+<input type="button" class="submit-button btn btn-primary align-self-center" value="Submit" disabled>
+</div>
+</form>
+</div>
+<div class="tab-pane fade" id="menu2">
+<div class="d-flex justify-content-end mb-3 p-relative search-lta">
+<select class="form-control w-25 rounded-0 rounded-left">
+<option>Claim ID</option>
+<option>Claim Submission Date</option>
+<option>Amount</option>
+</select>
+<i class="fa fa-search rounded-right" aria-hidden="true" title="Search"></i>
+</div>
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Claim ID</th>
+<th>Claim Submission Date</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="" data-toggle="modal" data-target="#myModal">123</a></td>
+<td>02-Feb-2019</td>
+<td>3000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="tab-pane fade" id="menu3">
+<p>As per the flexible basket policy, I would like to opt for the following component and amounts. I understand that I can modify these only once a year. Also, tax liability if any shall be borne by me.</p>
+<form>
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Component</th>
+<th>Monthly Amount Opted for (Rs.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input type="checkbox"> Fuel</td>
+<td><input type="text" class="form-control"></td>
+</tr>
+<tr>
+<td><input type="checkbox"> Maintenance</td>
+<td><input type="text" class="form-control"></td>
+</tr>
+<tr>
+<td><input type="checkbox"> Insurance</td>
+<td><input type="text" class="form-control"></td>
+</tr>
+<tr>
+<td><input type="checkbox"> Driver Salary</td>
+<td><input type="text" class="form-control"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="d-flex justify-content-end">
+<input type="button" class="btn btn-primary" value="Submit">
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<!-- Modal Header -->
+<div class="modal-header p-2 pl-3 pr-3">
+<h4 class="modal-title ft-18">Claim Detail</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<!-- Modal body -->
+<div class="modal-body">
+<div class="table-responsive">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Flexi Component</th>
+<th>Bill Date</th>
+<th>Bill No.</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuel</td>
+<td>02-Feb-2019</td>
+<td>123</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Insurance</td>
+<td>02-Feb-2019</td>
+<td>1234</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Driver Salary</td>
+<td>02-Feb-2019</td>
+<td>1232</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-3 p-2">
+<div class="container d-flex justify-content-between">
+<div class="copyright">&copy; Copyright 2019 - Bata. All Rights Reserved.</div>
+<div class="link"><a href="" title="IT Support">IT Support</a> | <a href="" title="Refer & Earn">Refer &amp; Earn</a> | <a href="" title="Feedback">Feedback</a> | <a href="" title="Sitemap">Sitemap</a></div>
+</div>
+</footer>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/customScroll.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

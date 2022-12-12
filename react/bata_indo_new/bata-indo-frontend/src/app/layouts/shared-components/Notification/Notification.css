@@ -1,0 +1,67 @@
+.Notification-list {
+	width: 100%;
+	height: 274px;
+}
+
+/* .Notification-list-scroll{
+    width: 100%;
+    height: 282px;
+} */
+
+.Notification-list a {
+	font-weight: 500;
+	padding: 5px 14px;
+	/* border-bottom: 1px solid #ddd; */
+	border-left: 2px solid #fff;
+	color: #333;
+	display: flex;
+	align-items: center;
+}
+
+.Notification-list a:hover {
+	text-decoration: none;
+	border-left: 2px solid #e2001a;
+	background-color: #f9f9f9;
+}
+
+.Notification-list .badge {
+	border-radius: 50%;
+	border: 1px solid #e2001a;
+	line-height: 26px;
+	height: 26px;
+	width: 26px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #e2001a;
+	font-weight: bold;
+}
+
+.num {
+	position: absolute;
+	right: 11px;
+	top: 6px;
+	color: #fff;
+}
+
+.count {
+	color: #e2001a;
+	width: 24px;
+	background-color: #f6f7f9;
+	border: 1px solid #e2001a;
+	border-radius: 50%;
+	font-size: 10px;
+	font-weight: bold;
+	height: 24px;
+	padding: 1px 4px;
+	position: absolute;
+	right: 15px;
+	top: 2px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.liText {
+	margin-right: 10px;
+}

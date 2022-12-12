@@ -1,0 +1,37 @@
+.quicklinks a {
+    font-weight: 500;
+    padding: 10px 14px;
+    border-bottom: 1px solid #ddd;
+    border-left: 2px solid #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    background: #fff !important;
+}
+
+.quicklinks a:hover {
+    text-decoration: none;
+    border-left: 2px solid #e2001a;
+    background-color: #f9f9f9 !important;
+}
+.mr-4{
+    margin-right: 4px;
+}
+/* .quicklinks a:before {
+    content: "\f101";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    color: #333;
+} */
+
+/* .quicklinks .badge {
+    background-color: #e2001a;
+    font-size: 12px;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+} */

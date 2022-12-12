@@ -1,0 +1,80 @@
+<main class="container rounded p-3 mt-3">
+  <div class="ribbon p-2 mb-3 rounded-top">
+  <div class="nav-name">Reactive Form</div>
+  </div>
+  <form [formGroup]="signupForm" (ngSubmit)="PostData(signupForm)">
+  <div class="row">
+  <div class="col-md-12">
+  <div class="form-group">
+  <label for="des">First Name</label>
+  <input type="text" class="form-control" formControlName="fName">
+  </div>
+  <div class="form-group">
+  <label for="des">Last Name</label>
+  <input type="text" class="form-control" formControlName="lName">
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-6">
+  <div class="form-group">
+  <label for="des">Year of Experience:</label>
+  <input type="text" class="form-control" formControlName="exp">
+  </div>
+  <div class="form-group">
+  <label for="des">Department:</label>
+  <select class="form-control" formControlName="depart">
+  <option>--Select--</option>
+  <option>Software</option>
+  <option>Sales</option>
+  <option>Pre sales</option>
+  <option>Infra</option>
+  </select>
+  </div>
+  <div class="form-group">
+  <label for="des">Location:</label>
+  <select class="form-control" formControlName="location">
+  <option>--Select--</option>
+  <option>Delhi</option>
+  <option>Mumbai</option>
+  <option>kolkata</option>
+  <option>Chennai</option>
+  <option>Patna</option>
+  </select>
+  </div>
+  </div>
+  <div class="col-md-6">
+  <div class="form-group">
+  <label for="training">Designation:</label>
+  <select class="form-control" formControlName="desig">
+  <option>--Select--</option>
+  <option>Software Eng.</option>
+  <option>Tech Lead</option>
+  <option>Team Lead</option>
+  <option>Project Manager</option>
+  </select>
+  </div>
+  <div class="form-group">
+  <label for="des">Region:</label>
+  <select class="form-control" formControlName="reg">
+  <option>--Select--</option>
+  <option>East</option>
+  <option>West</option>
+  <option>South</option>
+  <option>North</option>
+  </select>
+  </div>
+  <div class="form-group">
+    <label for="des">Mobile no.:</label>
+    <input type="text" class="form-control" formControlName="mob">
+   
+    </div>
+
+
+  </div>
+  </div>
+  <div class="form-submit d-flex justify-content-center mt-2">
+  <input type="submit" class="submit-button btn btn-primary align-self-center" value="Submit" [disabled]='!signupForm.valid'>
+  </div>
+  </form>
+  </main>

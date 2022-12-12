@@ -1,0 +1,15 @@
+
+ h1{background-color:cornsilk; text-align: left; margin: 0; padding:5px 10px; font-size: 18px;}
+label{background-color:#ccc; font-size: 18px; width:30%; display: inline-block; padding: 5px 10px; margin: 2px;}
+.evnClass{background-color: #ccc; font-size: 16px;}
+.oddClass{background-color:#ff0000; font-size: 16px;}
+.bold{font-weight: bold;}
+.txtitalic{font-style: italic;}
+.txtcolor{color:#ff0000; }
+.wrapper{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.box_wrapp{ border:solid 1px #ccc; background-color: #eeeeee; padding: 5px; margin-bottom: 20px; height: 200px; width: 200px;  }
+.one{ background-color: #ff0000;}
+.two{ background-color: #91ff00;}
+.three{ background-color: #8c00ff;}
+.four{ background-color: #3f1313;}
+

@@ -1,0 +1,15 @@
+<h1>Pipe example </h1>
+<div *ngFor="let data of empdetails">
+{{data.id  }} | {{data.name | titlecase | welocme | reverse  }}  | {{data.country | uppercase | slice:0:3}} | {{data | json}}
+
+</div>
+
+<h1>reverse name</h1>
+<div>
+  
+   {{nme | reverse }} 
+  
+  </div>
+  <div>
+  {{paragraph | wordlimit:100:'?' }}
+</div>

@@ -1,0 +1,33 @@
+.birthday .wish-user-icon {
+	background-color: #e2001a;
+	color: #fff;
+	width: 26px;
+	height: 26px;
+	font-size: 12px;
+	line-height: 26px;
+}
+.bdr-bottom {
+	border-bottom: 1px solid #ced4da !important;
+}
+
+.birthday .wish-detail {
+	line-height: 1.5;
+}
+
+.birthday .wish-name {
+	color: #e2001a;
+	font-weight: 500;
+}
+.birthday .wish-date,
+.birthday .department {
+	color: #999;
+	font-size: 12px;
+}
+
+.birthday .send-wish a {
+	border-radius: 20px;
+	background-color: #f3f3f3;
+	padding: 2px 5px;
+	font-size: 12px;
+	color: #e2001a;
+}

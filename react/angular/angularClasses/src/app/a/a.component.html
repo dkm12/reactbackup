@@ -1,0 +1,25 @@
+<h1>Parent Component</h1>
+<label>parent component</label> :
+
+<input type="text" #Pcomponent (keyup)="0"  />
+<br>
+<label>Child to Parent data</label> : {{Cdata}}
+
+<app-b [Pdata]="Pcomponent.value" (childTop)="onclick($event)"></app-b>
+ <!-- {{employeeDetail && employeeDetail.name}},
+{{employeeDetail && employeeDetail.designation}}
+{{employeeDetail && employeeDetail .city}}  -->
+
+ <!-- {{employeeDetail?.name}},
+{{employeeDetail?.designation}}
+{{employeeDetail?.city}}  -->
+
+<!-- {{employeeDetail?employeeDetail.name :'no data found'}},
+{{employeeDetail?employeeDetail.designation :'no data found'}},
+{{employeeDetail?employeeDetail.city :'no data found'}}  -->
+<h1>ng if example</h1>
+<div *ngIf="enu.one>10">
+  {{enu.one}}is greater than 1
+</div>
+
+<h1>example of ng switch</h1>

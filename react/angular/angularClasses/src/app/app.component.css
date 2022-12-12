@@ -1,0 +1,3 @@
+h1{background-color: blue; text-align: center;}
+.navContainer{display: flex;  justify-content: center;}
+.navContainer a{padding: 10px; text-align: center;}

@@ -1,0 +1,8 @@
+<h1>component 1 </h1>
+<label>Enter amount </label><input type="text" #txtnum /><button (click)="addnumber(txtnum.value)">
+  add Number
+
+</button>
+<ul *ngFor="let data of list1">
+  <li>{{data}}</li>
+</ul>

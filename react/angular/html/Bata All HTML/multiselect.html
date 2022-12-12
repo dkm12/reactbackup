@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bata</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="images/favicon.png" type="image/vnd.microsoft.icon" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/customScroll.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="multiselect/compiled-4.8.5.min.css">
+
+<style>
+
+</style>
+</head>
+
+<body>
+
+<header></header>
+
+
+
+
+<main class="container rounded p-3">
+<div class="ribbon p-2 mb-3 rounded-top">
+<div class="nav-name">Assign user to Poll</div>
+</div>
+<form class="needs-validation" novalidate>
+
+<div class="row">
+  <div class="col-md-6">
+
+    <select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
+      <option value disabled selected>Choose your Location</option>
+      <option value="1">USA</option>
+      <option value="2">Germany</option>
+      <option value="3">France</option>
+      <option value="4">Poland</option>
+      <option value="5">Japan</option>
+    </select>
+    <label class="mdb-main-label">Select Location</label>
+    <button class="btn-save btn btn-primary btn-sm">Save</button>
+
+  </div>
+  <div class="col-md-6">
+
+    <select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
+      <option value disabled selected>Choose your Department</option>
+      <option value="1">Dept1</option>
+      <option value="2">Dept2</option>
+      <option value="3">Dept2</option>
+      <option value="4">Dir</option>
+      <option value="5">SSE</option>
+    </select>
+    <label class="mdb-main-label">Select Department</label>
+    <button class="btn-save btn btn-primary btn-sm">Save</button>
+
+  </div>
+  <div class="col-md-6">
+
+    <select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
+      <option value disabled selected>Choose your Grade</option>
+      <option value="1">MS</option>
+      <option value="2">MI</option>
+      <option value="3">MII</option>
+      <option value="4">MIV</option>
+      <option value="5">MV</option>
+    </select>
+    <label class="mdb-main-label">Select Grade</label>
+    <button class="btn-save btn btn-primary btn-sm">Save</button>
+
+  </div>
+  <div class="col-md-6">
+
+    <select class="mdb-select colorful-select dropdown-primary md-form" multiple searchable="Search here..">
+      <option value disabled selected>Choose your Gender</option>
+      <option value="1">Male</option>
+      <option value="2">Female</option>    
+    </select>
+    <label class="mdb-main-label">Select Gender</label>
+    <button class="btn-save btn btn-primary btn-sm">Save</button>
+
+  </div>
+  
+  <div class="col-md-6">
+		<label for="name" class="w-25 align-self-center mb-0">Publish From Date:</label>
+		<input type="date" name="publishFrom" class="form-control">
+  </div>
+   <div class="col-md-6">
+		<label for="name" class="w-25 align-self-center mb-0">Publish To Date:</label>
+		<input type="date" name="publishFrom" class="form-control">
+  </div>
+</div>
+  
+  
+  
+ 
+ 
+  <div class="form-submit d-flex justify-content-between  border border-top-0 p-2">
+	<input type="button" class="submit-button btn btn-sm btn-primary align-self-center" value="Save As Draft" disabled> 
+	<input type="button" class="submit-button btn btn-sm btn-primary align-self-center" value="Publish" disabled> 
+	<input type="button" class="submit-button btn btn-sm btn-primary align-self-center" value="Cancel" disabled> 
+</div>
+
+</form>
+</main>
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<!-- Modal Header -->
+<div class="modal-header p-2 pl-3 pr-3">
+<h4 class="modal-title ft-18">Claim Detail</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+<!-- Modal body -->
+
+</div>
+</div>
+</div>
+<footer class="mt-3 p-2">
+<div class="container d-flex justify-content-between">
+<div class="copyright">&copy; Copyright 2019 - Bata. All Rights Reserved.</div>
+<div class="link"><a href="" title="IT Support">IT Support</a> | <a href="" title="Refer & Earn">Refer &amp; Earn</a> | <a href="" title="Feedback">Feedback</a> | <a href="" title="Sitemap">Sitemap</a></div>
+</div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/customScroll.js"></script>
+<script src="js/main.js"></script>
+
+<script src="multiselect/clipboard.min.js"></script>
+<script src="multiselect/compiled-4.8.5.min.js.download"></script>
+<div class="hiddendiv common"></div>
+<script>// Material Select Initialization
+$(document).ready(function() {
+$('.mdb-select').materialSelect();
+});</script>
+</body>
+</html>
+
+

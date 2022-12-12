@@ -1,0 +1,7 @@
+<h1>Parent Decorator</h1>
+<label>Enter text  </label>
+<input type="text"  #pTxt (keyup)="0" /><br/>
+<label>Child data</label>
+{{childata}}
+<app-input-decorator-child [Pdata]="pTxt.value" (newevent)="chiledValue($event)" [msassage]="stdentDetail"></app-input-decorator-child>
+

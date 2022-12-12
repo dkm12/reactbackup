@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  width: 98%;
+}
+
+.prodctMain{display: flex;  width: 100%;  justify-content: center;}
+.prodctMain .item{border: solid 1px #ccc; width:250px; height: auto; padding: 20px 5px;}
+.prodctMain .item img{width:100%;}
+.addToCartWrapper{display: flex;  width: 100%;  justify-content: flex-end;}
+.addToCart img{width: 30px; position: relative;}
+.addToCart{position: relative;     margin-top: 20px;} 
+.addToCart .cartCount {border-radius: 50%;padding: 2px;width: 18px;color: #fff;background-color: red; position: absolute;
+top: -7px;right: -9px;font-size: 12px;}

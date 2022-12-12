@@ -1,0 +1,57 @@
+body.login{background-color: transparent; background-image: url("../images/Bata_login.jpg"); background-repeat: no-repeat; background-position: top center; background-attachment: fixed; background-size: cover;}
+.login-box{height: 360px; width: 400px; background-color: $color-white; @include p-absolute; top: 100px; left: 200px; padding: 2rem; @include box-shadow; border-top: 2px solid $color-brand}
+.login-box{
+	form{padding: 0 30px;}
+}
+.login-text{@include ft-18;
+	span{color: $color-brand;}
+}
+.card{position:relative;background:#fff;padding:0;box-sizing:border-box;-webkit-transition:.3s ease;transition:.3s ease}
+.card .input-container{position:relative;margin-top:0}
+.card .input-container input{outline:0;z-index:1;position:relative;background:0 0!important;width:100%;border:0;color:#212121;font-size:16px;font-weight:400}
+.card .input-container input:focus~label{color:#9d9d9d;-webkit-transform:translate(-12%,-50%) scale(.75);transform:translate(-12%,-50%) scale(.75)}
+.card .input-container input:focus~.bar:after,.card .input-container input:focus~.bar:before{width:50%}
+.card .input-container input:valid~label{color:#9d9d9d;-webkit-transform:translate(-12%,-50%) scale(.75);transform:translate(-12%,-50%) scale(.75)}
+.card .input-container label{position:absolute;top:-10px;left:0;color:$color-gray2;font-size:16px;font-weight:300;line-height:60px;-webkit-transition:.2s ease;transition:.2s ease}
+.card .input-container .bar{position:absolute;left:0;bottom:0;background:$color-gray2;width:100%;height:1px}
+.card .input-container .bar:after,.card .input-container .bar:before{content:'';position:absolute;background:#b44645;width:0;height:2px;-webkit-transition:.2s ease;transition:.2s ease}
+.card .input-container .bar:before{left:50%}
+.card .input-container .bar:after{right:50%}
+.card .button-container{margin:0 60px;text-align:center}
+.card .button-container button{outline:0;cursor:pointer;position:relative;display:inline-block;background:0;width:240px;border:2px solid #e3e3e3;padding:20px 0;font-size:24px;font-weight:600;line-height:1;text-transform:uppercase;overflow:hidden;-webkit-transition:.3s ease;transition:.3s ease}
+.card .button-container button span{position:relative;z-index:1;color:#ddd;-webkit-transition:.3s ease;transition:.3s ease}
+.card .button-container button:before{content:'';position:absolute;top:50%;left:50%;display:block;background:#ed2553;width:30px;height:30px;border-radius:100%;margin:-15px 0 0 -15px;opacity:0;-webkit-transition:.3s ease;transition:.3s ease}
+.card.alt,.card.alt .toggle{width:140px;height:140px;border-radius:100%}
+.card .button-container button:active,.card .button-container button:focus,.card .button-container button:hover{border-color:#b44645}
+.card .button-container button:active span,.card .button-container button:focus span,.card .button-container button:hover span{color:#ed2553}
+.card .button-container button:active span,.card .button-container button:focus span{color:#fff}
+.card .button-container button:active:before,.card .button-container button:focus:before{opacity:1;-webkit-transform:scale(10);transform:scale(10)}
+.card .footer{margin:40px 0 0;color:#d3d3d3;font-size:24px;font-weight:300;text-align:center}
+.card .footer a{color:inherit;text-decoration:none;-webkit-transition:.3s ease;transition:.3s ease}
+.card .footer a:hover{color:#bababa}
+.card.alt{position:absolute;top:40px;right:-70px;z-index:10;background:0 0;box-shadow:none;padding:0;-webkit-transition:.3s ease;transition:.3s ease}
+.card.alt .toggle{position:relative;background:#ed2553;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);color:#fff;font-size:58px;line-height:140px;text-align:center;cursor:pointer}
+.card.alt .toggle:before{content:'\f040';display:inline-block;-webkit-transform:translate(0,0);transform:translate(0,0)}
+.card.alt .button-container,.card.alt .input-container,.card.alt .title{left:100px;opacity:0;visibility:hidden}
+.card.alt .title{position:relative;border-color:#fff;color:#fff}
+.card.alt .title .close{cursor:pointer;position:absolute;top:0;right:60px;display:inline;color:#fff;font-size:58px;font-weight:400}
+.card.alt .title .close:before{content:'\00d7'}
+.card.alt .input-container input,.card.alt .input-container input:focus~label{color:#fff}
+.card.alt .input-container input:focus~.bar:after,.card.alt .input-container input:focus~.bar:before{background:#fff}
+.card.alt .input-container input:valid~label{color:#fff}
+.card.alt .input-container label{color:rgba(255,255,255,.8)}
+.card.alt .input-container .bar{background:rgba(255,255,255,.8)}
+.card.alt .button-container button{width:100%;background:#fff;border-color:#fff}
+.card.alt .button-container button span{color:#ed2553}
+.card.alt .button-container button:hover{background:rgba(255,255,255,.9)}
+.card.alt .button-container button:active:before,.card.alt .button-container button:focus:before{display:none}
+.card input{padding:6px 4px;outline:0;margin:0 0 20px;width:100%;max-width:100%;display:block;}
+.login_btn{background-color: #696768}
+.login_btn:hover, .login_btn:focus, .login_btn:active{background-color: #565656 !important; box-shadow: 0 0 0 0.2rem rgba(105, 103, 104, 0.2) !important}
+
+@media (max-width: 768px){
+.login-box{top: 0; left: 0; right: 0; bottom: 0; margin: auto;}
+}
+@media (max-width: 450px){
+.login-box{width:calc(100% - 32px); margin: auto 16px; padding: 1rem; height: 340px;}
+}

@@ -1,0 +1,30 @@
+@mixin bdr-all{border: 1px solid $bdr-color;}
+@mixin bdr-right{border-right: 1px solid $bdr-color !important;}
+@mixin bdr-left{border-left: 1px solid $bdr-color !important;}
+@mixin bdr-bottom{border-bottom: 1px solid $bdr-color !important;}
+@mixin bdr-top{border-top: 1px solid $bdr-color !important;}
+@mixin bdr-none{border: 0}
+@mixin d-block{display: block !important}
+@mixin mb-10{margin-bottom: 10px;}
+@mixin mr-5{margin-right: 5px;}
+@mixin mr-15{margin-right: 15px;}
+@mixin ft-30{font-size: 30px}
+@mixin ft-24{font-size: 24px}
+@mixin ft-20{font-size: 20px}
+@mixin ft-18{font-size: 18px}
+@mixin ft-16{font-size: 16px}
+@mixin ft-14{font-size: 14px !important}
+@mixin ft-12{font-size: 12px}
+@mixin p-15{padding: 15px}
+@mixin p-10{padding: 10px}
+@mixin p-0{padding: 0px}
+@mixin text-upper{text-transform: uppercase;}
+@mixin text-right{text-align: right;}
+@mixin font-weight-5{font-weight: 500;}
+@mixin font-weight{font-weight: bold;}
+@mixin box-shadow{box-shadow: 0 0px 10px rgba(0,0,0,0.2)}
+@mixin p-relative{position: relative}
+@mixin p-absolute{position: absolute}
+@mixin text-d-none{text-decoration: none}
+@mixin cursor-p{cursor: pointer}
+@mixin bdr-radius-20{border-radius: 20px;}

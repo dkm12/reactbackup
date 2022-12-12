@@ -1,0 +1,58 @@
+<!-- <h1>App componenet here</h1> -->
+<!-- <h1>Ng if example</h1>
+
+<input type="radio" name="gender" checked (click)="changeValue(1)" /> Male
+<input type="radio" name="gender" (click)="changeValue(2)" /> Female
+<input type="radio" name="gender" (click)="changeValue(3)"  />Trangender
+
+<div *ngIf="isvalid==1">I am male</div>
+<div *ngIf="isvalid==2">I am Female</div>
+<div *ngIf="isvalid==3">I am Trangender</div>
+
+<input type="radio" name="gender1" checked (click)="changeValued('male')" /> Male
+<input type="radio" name="gender1" (click)="changeValued('female')" /> Femal
+
+<div *ngIf="valid=='male';else elseblock" >I am male</div>
+<ng-template #elseblock>
+  <div >I am Female</div>
+
+
+</ng-template>
+
+<label>Pleasee enter Your age</label> :
+<input type="text" #textage (keyup)="0" />
+<div *ngIf="textage.value >='18'; else  block2">
+  You are elegible for vote 
+</div>
+
+<ng-template #block2>
+  <div>
+  abc
+  </div> 
+
+</ng-template> -->
+
+
+<!-- <app-a></app-a> 
+  <app-pipe-example></app-pipe-example> -->
+<!-- <app-sesion-managment-component></app-sesion-managment-component>
+<app-sesion-managment-component-b></app-sesion-managment-component-b> -->
+<!-- <app-input-decorator-parent></app-input-decorator-parent> -->
+<!-- <app-service-component></app-service-component> -->
+<!-- <app-account-holder1></app-account-holder1> 
+<app-account-holder2></app-account-holder2>  -->
+<h1>Dashboard</h1>
+<div class="navContainer"> 
+  <a routerLink="accountHolder1"> Account Holder 1</a> 
+  <a routerLink="accountHolder2">Account Holder 2</a> 
+  <a routerLink="aboutUs">About Us</a> 
+  <a [routerLink]="['classExample',100]">Class example</a>
+  <!-- <a routerLink="Dashboard">Dashboard </a> -->
+  <a [routerLink]="'Dashboard'">Dashboard </a>
+  <button (click)="gotoAboutUs()">About Us</button>
+  
+</div>
+<router-outlet></router-outlet>
+
+<!-- <app-comp-for-service1></app-comp-for-service1>
+<app-comp-for-service2></app-comp-for-service2> -->

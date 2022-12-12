@@ -1,0 +1,231 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{background:#f2f9ff; font-family: 'Open Sans', sans-serif !important; font-size:14px; color:#1f2020;}
+a{color:#091a50;}
+h2{font-size:26px; font-weight:700; text-transform:uppercase; color:#0f3257;}
+h3{font-size:22px; font-weight:700; color:#4e4e4e;}
+h4{font-size:18px; font-weight:600; color:#091a50;}
+.label, .MuiInputLabel-formControl, .MuiInputLabel-root {font-weight: 600 !important;color: #3c3c3c !important;margin-bottom: 5px !important; font-family: 'Open Sans', sans-serif !important;}
+label + .MuiInput-formControl{margin-top: 20px !important;}
+.MuiTabPanel-root{padding: 24px 0 !important;}
+.form-control, .MuiInputBase-input, .MuiSelect-select, textarea {display: block;width: 100%;padding: 0.375rem 0.75rem !important;font-size: 1rem;line-height: 1.5;color: #495057;background-color: #fff;background-clip: padding-box;
+border: 1px solid #ced4da !important;border-radius: 0.25rem !important;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.btn-primary{color:#fff !important; background:#0f4a8a; border-radius:20px; padding:8px 15px; font-size:14px;}
+.textBlock{display:block;}
+.profileImage{max-width: 180px; height: auto;}
+.btn-primary + .btn-primary{margin-left: 10px !important;}
+.termsCondition{font-size: 13px; color:#696969; font-weight: 600;}
+.termsCondition #checkID{width: 20px; height: 20px;}
+.contentSpace{padding:0 25px;}
+.pull-right{float:right;}
+.bankingSec h3, .dmtSec h3, .aadharSec h3, .miniAtmSec h3, .biometricSec h3{margin-bottom:30px;}
+.bankingSec .btn, .dmtSec .btn, .aadharSec .btn, .miniAtmSec .btn, .biometricSec .btn{margin-top:30px;}
+.bankingSec p, .dmtSec p, .aadharSec p, .miniAtmSec p, .biometricSec p{font-size:18px;}
+.bankingSec img, .dmtSec img, .aadharSec img, .miniAtmSec img, .biometricSec img {width:300px;}
+.img30{width:30px !important;}
+
+/*-------banner css start-----------*/
+#boiHomeBanner{padding:80px 50px;}
+#boiHomeBanner .carousel-caption{top:0; left:0; text-align:left;}
+#boiHomeBanner .carousel-caption .btn-primary{background:none; color:#091a50 !important; border:1px solid #091a50; border-radius:20px; margin-top:30px;}
+#boiHomeBanner .carousel-caption h1{font-weight:700; font-size:50px; text-transform:uppercase; color:#091a50; line-height:1;}
+#boiHomeBanner .carousel-caption h2{margin-top:20px; font-weight:600; font-size:30px; color:#1f2020; text-transform:none;}
+#boiHomeBanner .carousel-caption p{font-size:20px; font-weight:600; color:#1f2020;}
+#boiHomeBanner .carousel .control-dots{bottom: -50px;}
+#boiHomeBanner .carousel-caption .smallTitle{font-weight:700; font-size:40px; text-transform:uppercase; color:#1f2020;}
+#boiHomeBanner .carousel .control-dots .dot{opacity: 1; background:#d1d6db; width:30px; height: 3px; border-radius: 0; box-shadow: none; 
+	/* background-repeat: ; */
+}
+#boiHomeBanner .carousel .control-dots .dot.selected{background:#f67a10;}
+#boiHomeBanner .carousel-item img{float:right;} 
+#boiHomeBanner .carousel-control-prev, #boiHomeBanner .carousel-control-next{width:auto;} 
+#boiHomeBanner .carousel-control-prev img, #boiHomeBanner .carousel-control-next img{width:28px;} 
+#boiHomeBanner .carousel .slide img{max-height: 400px; height: auto !important;}
+#boiHomeBanner .carousel.carousel-slider .control-arrow{background: none; left: -60px; opacity: 1;}
+#boiHomeBanner .carousel.carousel-slider .control-next{right:-60px; left: inherit;}
+#boiHomeBanner .carousel-root{position: relative;}
+#boiHomeBanner .carousel.carousel-slider{position: static;}
+#boiHomeBanner .carousel .control-prev:before{border:none; background-image: url(../../ETPL-frontend/public/images/sliderPrev.png); background-repeat: no-repeat; width:28px;  height: 64px; background-size: 28px 64px;}
+#boiHomeBanner .carousel .control-next:before{border:none; background-image: url(../../ETPL-frontend/public/images/sliderNext.png); background-repeat: no-repeat; width:28px;  height: 64px; background-size: 28px 64px;}
+/*-------------bill pay sec css start-----------*/
+.billPaySec{background:#0f4a8a;color:#fff; padding:55px 0 45px 0;}
+.billPaySec h2{color:#fff;}
+.billPaySec .tab{display:flex; justify-content:space-between; margin:auto; overflow-x:auto; white-space: nowrap;}
+.billPaySec .tabImg{width:60px; height:60px; padding:10px; background:#fff; border-radius:50%; display:flex; margin:auto;}
+.billPaySec .tab img{width:22px; margin:auto;}
+.billPaySec .tab{margin-top:60px;}
+.billPaySec .tabcontentNew{display:none;}
+/* Change background color of buttons on hover */
+.billPaySec .tab .tablinksNew:hover {border-bottom:4px solid #3190f7}
+.billPaySec .tab .tablinksNew{padding-bottom:10px; border-bottom:4px solid #0f4a8a}
+.billPaySec #sec .iconBox{width: 50px; height: 50px; padding: 10px; border:1px solid #d7d7d7; border-radius: 50%;display: flex;margin: auto; margin-bottom: 5px;}
+.billPaySec #sec .iconBox img{margin: auto; width:30px;}
+.billPaySec .tabcontentNew.active{display:block;}
+/* Create an active/current tablink class */
+.billPaySec .tab .tablinksNew.active {border-bottom:4px solid #3190f7; padding-bottom:10px;}
+
+.billPaySec .tablinksNew{font-size:15px; font-weight:600; margin:0 10px;}
+.billPaySec .tablinksNew .tabImg{margin-bottom:15px;}
+.billPaySec .cardBody{background:#fff; padding:15px; border-radius:10px;}
+.billPaySec label{color:#3c3c3c; font-weight:600; display: block; margin-bottom: 5px;}
+/* .billPaySec input::placeholder, .billPaySec option:checked{color:#cccbcb;} */
+.billPaySec .submitBtn{margin-top:23px; border-radius:5px; }
+/*-------------banking sec css start-----------*/
+.bankingSec{padding:55px 0 45px 0;}
+.bankingSec h2{margin-bottom:30px;}
+
+/*-------------DMT sec css start-----------*/
+.dmtSec{background:#edf5fb; padding:65px 0;}
+
+/*-------------aadhar sec css start-----------*/
+.aadharSec{padding:65px 0;}
+
+/*-------------mini ATM sec css start-----------*/
+.miniAtmSec{background:#edf5fb; padding:65px 0;}
+/*-------------biometric sec css start-----------*/
+.biometricSec{padding:65px 0;}
+/*-------------payBizz sec css start-----------*/
+.payBizz{background:#fff; padding:65px 0;}
+.payBizz .imgbox{width:40px; margin-right:35px;}
+.payBizz .imgbox img{width:40px;}
+.payBizz .checkList{margin-top:70px;}
+.payBizz .decText .heading, .payBizz .decText p{font-size:18px; font-weight:700; color:#282828;}
+.payBizz .decText p{font-weight:400;}
+.payBizz .checkList .listWrap{display:flex; margin-bottom:20px;}
+
+/* Style the tab */
+.payBizz .tab {margin:70px 0; padding:5px 20px; overflow: hidden; border: 1px solid #d8d8d8; background-color: #fff;border-radius: 50px;  -webkit-box-shadow: 0 10px 6px -6px #d9d9d9;
+	   -moz-box-shadow: 0 10px 6px -6px #d9d9d9;
+	        box-shadow: 0 10px 6px -6px #d9d9d9; display: block!important;}
+.payBizz .MuiTabs-flexContainer{display: flex; justify-content: space-between;}
+.payBizz .MuiTab-root, .payBizz .MuiTabs-root{min-height: auto;}
+.payBizz .tabBody .checkList{margin-top:0;}
+.payBizz .tabBody .decText{font-size:16px;}
+.payBizz .tabBody .imgbox{margin-right:20px; width:30px;}
+.payBizz .tabBody .decText{font-size:16px;}
+.payBizz .tabBody .imgbox img{width:30px;}
+.payBizz .tabBody .listWrap {margin-bottom:10px;}
+.payBizz .tabBody p{font-size:16px;}
+.payBizz .tabBody h4 {font-size:24px; font-weight:600; margin-bottom:20px;}
+
+/* Style the buttons inside the tab */
+.payBizz .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 16px;
+  transition: 0.3s;
+  font-size: 17px; margin-right:10px;
+}
+
+/* Change background color of buttons on hover */
+.payBizz .tab button:hover {background-color: #156b8a; color:#fff; border-radius:20px;}
+
+/* Create an active/current tablink class */
+.payBizz .tab button.active {background-color: #156b8a; color:#fff; border-radius:20px;}
+
+/* Style the tab content */
+.payBizz .tabcontent {
+  display: none;
+}
+.payBizz .tabcontent.active{display:block;}
+.tabBody{padding:15px;}
+.payBizz-signUp{border:1px solid #d8d8d8; padding:20px;}
+.payBizz-signUp .btn{background:#156b8a; border-color:#156b8a; padding:5px 16px; border-radius:10px;}
+.payBizz-signUp form label {font-size:15px; font-weight:600; color:#202020; display: block;}
+/*-------------our partner sec css start-----------*/
+.ourPartner{background:#f6f6f6; padding:50px 0;}
+.ourPartner .boxBlue, .ourPartner .react-multi-carousel-track li{background:#fff; min-height:94px; margin-right: 10px; display: flex; align-items: center; justify-items: center;}
+.ourPartner .react-multi-carousel-track img{width: 130px !important; margin: auto; height: auto !important;}
+#carousellogo, .ourPartner .react-multi-carousel-list{margin-top:30px; }
+#carousellogo .carousel-control {border-radius: 50%; background: #e5e5e5;margin: auto;opacity: 1;bottom: 50%;top: 40%; position:absolute; width: 30px; height: 30px; display: flex;align-items: center;justify-content: center;}
+#carousellogo .carousel-control.left{left:0;}
+#carousellogo .carousel-control.right{right:0;}
+.ourPartner .react-multiple-carousel__arrow--left{left: 0;}
+.ourPartner .react-multiple-carousel__arrow--right{right:0}
+
+/*-------------login sec css start-----------*/
+.loginPopup .MuiDialog-paperWidthSm{width: 80%; max-width:850px;}
+.loginPopup .MuiDialogContent-root:first-child{padding-top: 0;}
+.loginPopup .MuiDialogContent-root{padding: 0;}
+.loginPopup .leftImg{background:#f5f5f5; height: 100%; display: flex;}
+.loginPopup .leftImg img{display: block; margin: auto;}
+.loginPopup .leftImg, .loginPopup .rightSecLogin{padding: 50px;}
+.loginPopup .rightSecLogin h2{text-transform: none; margin-bottom: 50px;}
+.loginPopup .rightSecLogin .label{font-weight: 600; color:#3c3c3c; margin-bottom: 5px;}
+.loginPopup .MuiIconButton-root{position: absolute; right: 0;}
+.loginPopup .rightSecLogin .MuiInputBase-input{padding:8px 14px; border: 1px solid #ced4da; border-radius: 0.25rem;}
+.loginPopup .rightSecLogin .MuiInput-underline:after, .loginPopup .rightSecLogin .MuiInput-underline:before{border:none;}
+.loginPopup .rightSecLogin .loginOtpBtn{margin-top:50px; background:#0f4a8a; color: #fff !important; border-radius: 5px; display: inline-block; padding: 5px 10px;}
+/*-----------------comman tab css ----------------*/
+.walletWrap{border-bottom: 1px solid #d7d7d7; padding: 20px 0; }
+.walletWrap .kycImg{width:60px; height: 60px; margin-right: 20px; border: 1px solid #d7d7d7; border-radius: 50%;}
+.walletWrap .kycImg img{width:34px; display: flex; margin: auto; vertical-align: middle;}
+.tabWrap{margin: 30px 0;}
+.tabWrap .MuiTabs-flexContainer{border-bottom: 1px solid #d7d7d7;}
+.tabWrap .MuiTab-textColorPrimary.Mui-selected{color: #1d5490;}
+.tabWrap .tablinks{font-size: 16px;}
+/*-------------------KYC Image sec css ------------------*/
+.kycImgBox img{max-width: 480px;} 
+
+/*-------------------contentSec  css ------------------*/
+.contentSec{background: #fff; padding-bottom: 30px;}
+.contentSec .btn-primary{font-size: 14px; background:#1d5490; padding: 5px 30px; border-radius: 7px;}
+
+@media (min-width: 991px){
+	.container-fluid{padding:0 60px;}
+}
+@media (max-width: 991px){
+	.bankingSec img, .dmtSec img, .aadharSec img, .miniAtmSec img, .biometricSec img, .payBizz img {width:100%;}
+	.container-fluid{padding:0 15px;}
+}
+
+@media (max-width: 767px){
+.ourPartner .boxBlue{margin-bottom:10px;}
+.navSec .navbar-dark{margin-top:10px;}
+.navbar-toggler{float:right;}
+.collapse.navbar-collapse{clear:both; background:#fff; padding:10px 0;}
+.navSec .navbar-dark{display:block; padding:0; width:100%;}
+.navSec .textBlock{display:inline-block;}
+#collapsibleNavbar .navbar-nav li:hover .gw-sidebar.subMenu{position:inherit; top:0;}
+#collapsibleNavbar .navbar-nav .nav-item{padding:5px 10px; border-bottom: 1px solid #e2e8ee; border-right:none; display:block;}
+#collapsibleNavbar .nav-link img{right:10px; top:15px;}
+#boiHomeBanner .carousel-item img{width:100%;}
+.contentSpace img{margin:10px auto !important;}
+.bankingSec img, .dmtSec img, .aadharSec img, .miniAtmSec img, .biometricSec img, .payBizz img{max-width: 300px; margin: auto; display: block; float: none;}
+
+}
+@media (max-width: 578px){
+	.navSec .navbar-dark .navbar-toggler{position: absolute; top: -60px;right: 0;}
+	#boiHomeBanner .carousel-caption h1{ font-size: 30px;}
+	#boiHomeBanner .carousel-caption h2, #boiHomeBanner .carousel-caption .smallTitle{font-size: 20px;}
+	#boiHomeBanner .carousel-caption p{font-size:16px;}
+	#boiHomeBanner .carousel-caption .btn-primary{margin-top:10px;}
+	#boiHomeBanner .carousel-caption{right:0;}
+	.contentSpace img{width:250px; margin:auto; display:block; float:none;}
+}
+@media (max-width: 480px){
+	.mobileApp .text-center.flex{display: block;}
+	.mobileApp .ml-4.flex{justify-content: center;}
+	.form-group, .miniAtmSec img{margin-bottom: 10px;}
+    .tabBox h2{margin-top:10px;}
+	}
+	.popupHome {position: absolute;right: 70px;background: white;padding: 30px;color:#4b4b4b;border-radius: 5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); font-size: 16px; font-weight: 600; text-align: center;}
+	.userDropdown {position: absolute;min-width: 269px;z-index: 99; margin-top: 50px; margin-right: "10px";right: 70px;background: white;padding: 10px 0;color:#4b4b4b;border-radius: 5px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); font-size: 16px; font-weight: 600; text-align: center;}
+	.userDropdown  ul li{display: block;
+		text-align: left;
+		padding: 20px 27px;
+		border-bottom: 1px solid #efefef;}
+		.userDropdown  ul li:last-child{border-bottom:none}
+	.carousel-status{
+
+		display: none;
+	}
+	.pageHeader{width: 100%;background-color: #0f4a8a;font-weight: 600;padding: 12px 0;color:#FFFFFF}
+	.errorMessage{color:#f44336; font-size: 0.75rem; min-height: 1.2rem;}

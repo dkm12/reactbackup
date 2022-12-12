@@ -1,0 +1,142 @@
+<div class="wrapper">
+  <div class="box_wrapp">
+<h1>Child Component</h1>
+<label>Parent to chilld data </label> : {{Pdata}}
+<br>
+<label>child component input box</label>
+<input type="text" #Ccmponent (keyup)="onchange(Ccmponent.value)">
+</div>
+<div class="box_wrapp">
+
+<ul *ngFor="let data of allpersons | async">
+  <li> {{data.id}} | {{data.name}}</li>
+
+</ul>
+</div>
+
+<div class="box_wrapp">
+<button (click)="newData()">Refress</button>
+<table border="1">
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+  </tr>
+  <tr *ngFor="let data of personDetals; trackBy:trkdata">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+
+  </tr>
+
+</table>
+
+</div>
+
+  <div class="box_wrapp">
+    <div *ngFor="let data of id">
+      <div ngSwitch="{{data%2}}">
+        <div *ngSwitchCase="0" class="evnClass">{{data}}Even</div>
+        <div *ngSwitchCase="1" class="oddClass">{{data}}odd</div>
+ </div>
+
+    </div>
+  </div>
+
+  <!-- <h1>ng style example</h1>
+<div *ngFor="let data of empdetails">
+  <div [ngStyle]="{'background-color': getBgColor(data.country)}">{{data.id}} | {{data.name}} |  {{data.country}} |  </div>
+</div> -->
+
+<div class="box_wrapp">
+  <h1>Ng class Example 1</h1>
+  <div *ngFor="let data of empdetails;  index as i">
+    <div [ngClass]="{'evnClass':i%2==1, 'oddClass':i%2==0 }"> {{i}} {{data.id}} | {{data.name}} | {{data.country}}
+    </div>
+  </div>
+  </div>
+
+
+  <div class="box_wrapp">
+  <h1>Ng class Example 2</h1>
+  <div *ngFor="let data of empdetails;  index as i">
+    <div [ngClass]="{'evnClass':data.country=='India', 'oddClass':data.country=='Pakistan' }"> {{i}} {{data.id}} |
+      {{data.name}} | {{data.country}} </div>
+
+  </div>
+
+</div>
+
+<div class="box_wrapp">
+  <h1>style binding </h1>
+  <div *ngFor="let data of empdetails">
+    <div [style.font-weight]="isbold ? 'bold': 'normal'" [style.background-color]="iscolor ? '#ff0000' : '#ccc' ">
+      {{data.id}} | {{data.name}} | {{data.country}} </div>
+
+  </div>
+  </div>
+  <div class="box_wrapp">
+  <h1>class binding </h1>
+  <div *ngFor="let data of empdetails">
+    <div [class]="allclases"> {{data.id}} | {{data.name}} | {{data.country}} </div>
+
+  </div>
+</div>
+
+<div class="box_wrapp">
+  <h1>class binding anther example</h1>
+  <div *ngFor="let data of empdetails">
+    <div [ngClass]="addCssClass()"> {{data.id}} | {{data.name}} | {{data.country}} </div>
+
+  </div>
+</div>
+
+<div class="box_wrapp">
+  <h1>class binding anther example 2</h1>
+  <div *ngFor="let data of empdetails">
+    <div [ngClass]="addCssClassForCountry(data.country)"> {{data.id}} | {{data.name}} | {{data.country}} </div>
+
+  </div>
+</div>
+
+<div class="box_wrapp">
+  <h1>class binding anther example 3</h1>
+  <div *ngFor="let data of empdetails">
+    <div [ngClass]="{
+      'one':data.country==='India',
+      'two':data.country==='Pakistan',
+      'three':data.country==='UK',
+      'four':data.country==='USA'
+    }"> {{data.id}} | {{data.name}} | {{data.country}} </div>
+
+  </div>
+</div>
+
+<div class="box_wrapp">
+  <h1>Property binding example</h1>
+<div> <img [src]="banner" width="200px;" /></div>
+<h1>using interpolation</h1>
+<div> <img src="{{banner}}" width="200px;" /></div>
+  </div>
+
+  <div class="box_wrapp">
+    <h1>Property binding  with true false example</h1>
+    <button (click)="currentvalued()">Active/Deactive</button> 
+
+  <button disabled="true">button</button>    <button disabled="{{currentvalue}}">button</button>   <button [disabled]="currentvalue">button</button>
+  <h1>interpolatin with true false example</h1>
+  
+    </div>
+
+    <div class="box_wrapp">
+      <h1>Event binding</h1>
+    <input type="text" #intxt  (keyup)="inputvalue(intxt.value)"/>
+    type masage : {{msg}}
+    <input type="text" #intxt1  (keyup)="0"/>
+    type masage : {{intxt1.value}}
+    
+      </div>
+
+ 
+  
+
+
+</div>

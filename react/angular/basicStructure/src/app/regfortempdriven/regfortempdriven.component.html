@@ -1,0 +1,74 @@
+<main class="container rounded p-3 mt-3">
+  <div class="ribbon p-2 mb-3 rounded-top">
+  <div class="nav-name">Registration form from using template driven form</div>
+  </div>
+  <form #regForm='ngForm' (ngSubmit)="Register(regForm)" >
+
+    {{ department }} {{ location }} {{ region }} {{ designation }}
+    
+  <div class="row">
+  <div class="col-md-12">
+  <div class="form-group">
+  <label for="des">First Name</label>
+  <input type="text" class="form-control"  name="firstName" ngModel firstName required #firstName="ngModel" >
+  <div [hidden]="firstName.valid || firstName.pristine" class="alert alert-danger">First Name is required </div>
+  </div>
+  <div class="form-group">
+  <label for="des">Last Name</label>
+  <input class="form-control" id="lastName" name="lastName" required   [(ngModel)]="lastName" >
+  <div [hidden]="lastName.valid || lastName.pristine" class="alert alert-danger"> last Name is required </div>
+  </div>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-12">
+  <div class="form-group">
+  <label for="des">Email Address</label>
+  <input type="text" class="form-control"  name="emailAddress"  id="lastName"  required   [(ngModel)]="emailAddress" />
+  <div [hidden]="emailAddress.valid || emailAddress.pristine" class="alert alert-danger"> Email  is required </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+    <div class="form-group">
+    <label for="des">Year of Experience:</label>
+    <input type="text" class="form-control" value="">
+    </div>
+    <div class="form-group">
+    <label for="des">Department:</label>
+    <select class="form-control"  id="department" required [(ngModel)]="department" name="department" >
+      <option *ngFor="let dep of department" [value]="dep" >{{dep}}</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label for="des">Location:</label>
+    <select class="form-control"  id="location" required [(ngModel)]="location" name="location" >
+    <option *ngFor="let loc of location" [value]="loc" >{{loc}}</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="form-group">
+    <label for="training">Designation:</label>
+    <select class="form-control"  id="designation" required [(ngModel)]="designation" name="designation" >
+    <option *ngFor="let des of designation" [value]="des" >{{des}}</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label for="des">Region:</label>
+    <select class="form-control"  id="region" required [(ngModel)]="region" name="region" >
+    <option *ngFor="let reg of region" [value]="reg" >{{reg}}</option>
+    </select>
+    
+    </div>
+    </div>
+    </div>
+
+  <div class="form-submit d-flex justify-content-center mt-2">
+  <button type="submit" class="submit-button btn btn-primary align-self-center" [disabled]=  "!regForm.valid" id="Register" >Submit</button>
+  </div>
+  </form>
+  
+  </main>
